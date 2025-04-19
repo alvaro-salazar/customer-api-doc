@@ -171,7 +171,6 @@ curl -X 'GET' \
 
 ### Ejemplo:
 
-- customer_id = 1
 - salesperson_id = 10
 - visit_date = 1680000600
 
