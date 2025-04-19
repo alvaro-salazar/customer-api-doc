@@ -63,7 +63,8 @@ curl -X 'PATCH' \
     "limit": 250,
     "total": 1
   }
-}```
+}
+```
 
 
 ## Endpoint para listar las visitas a cliente de un vendedor 
