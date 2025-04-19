@@ -1,6 +1,6 @@
 
 
-# JSON:API
+# ENDPOINTS USANDO JSON:API
 
 ## Endpoint de cambio de estado para el registro de la visita del vendedor 
 
@@ -81,6 +81,7 @@ curl -X 'GET' \
   -H 'Content-Type: application/json'
 ```
 
+### RESPUESTA
 
 ```json
 {
@@ -179,6 +180,8 @@ curl -X 'GET' \
   -H 'accept: application/vnd.api+json' \
   -H 'Content-Type: application/json'
 ```
+
+### RESPUESTA
 
 ```json
 {
@@ -326,7 +329,9 @@ curl -X 'GET' \
 
 
 
-# API 
+
+
+# ENDPOINTS USANDO API RPC
 
 
 ## 1. Cambiar estado a 'completed'
@@ -336,6 +341,8 @@ curl -X PATCH http://localhost:8080/api/visit/1/status \
      -H "Content-Type: application/json" \
      -d '{"status": "completed"}'
 ```
+
+### RESPUESTA
 
 ```json
 {
@@ -349,6 +356,9 @@ curl -X PATCH http://localhost:8080/api/visit/1/status \
 ```bash
 curl -X GET "http://localhost:8080/api/visits?salespersonId=10&customerId=1"
 ```
+
+
+### RESPUESTA
 
 ```json
 [
@@ -368,6 +378,8 @@ curl -X GET "http://localhost:8080/api/visits?salespersonId=10&customerId=1"
 ```bash
 curl -X GET "http://localhost:8080/api/visits/route?salespersonId=10&date=2023-03-28"
 ```
+
+### RESPUESTA
 
 ```json
 [
