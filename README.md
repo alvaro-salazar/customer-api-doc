@@ -359,7 +359,9 @@ curl -X GET "http://localhost:8080/api/visits?salespersonId=10&customerId=1"
     "status": "scheduled",
     "visit_date": 1680000600
   }
-]```
+]
+
+```
 
 ## 3. Obtener ruta de visitas del 2023‑03‑28 para vendedor 10
 
@@ -391,4 +393,5 @@ curl -X GET "http://localhost:8080/api/visits/route?salespersonId=10&date=2023-0
     "visit_id": 1,
     "visit_time": 1680000600
   }
-]```
+]
+```
