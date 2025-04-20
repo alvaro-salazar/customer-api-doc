@@ -7,7 +7,7 @@
 
 ```bash
 curl -X 'PATCH' \
-  'http://127.0.0.1:8080/api/customer_visits/2/' \
+  'https://customer-service-190711226672.us-central1.run.app/api/customer_visits/2/' \
   -H 'accept: application/vnd.api+json' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -76,7 +76,7 @@ curl -X 'PATCH' \
 
 ```bash
 curl -X 'GET' \
-  'http://127.0.0.1:8080/api/customer_visits/?include=customer&fields%5BCustomerVisit%5D=salesperson_id%2Ccustomer_id%2Cvisit_date%2Cstatus%2Cnotes%2Coutcomes%2Ccreated_at%2Cupdated_at&page%5Boffset%5D=0&page%5Blimit%5D=10&sort=id&filter%5Bsalesperson_id%5D=10&filter%5Bcustomer_id%5D=1' \
+  'https://customer-service-190711226672.us-central1.run.app/api/customer_visits/?include=customer&fields%5BCustomerVisit%5D=salesperson_id%2Ccustomer_id%2Cvisit_date%2Cstatus%2Cnotes%2Coutcomes%2Ccreated_at%2Cupdated_at&page%5Boffset%5D=0&page%5Blimit%5D=10&sort=id&filter%5Bsalesperson_id%5D=10&filter%5Bcustomer_id%5D=1' \
   -H 'accept: application/vnd.api+json' \
   -H 'Content-Type: application/json'
 ```
@@ -176,7 +176,7 @@ curl -X 'GET' \
 
 ```bash
 curl -X 'GET' \
-  'http://127.0.0.1:8080/api/customer_visits/?include=customer&fields%5BCustomerVisit%5D=salesperson_id%2Ccustomer_id%2Cvisit_date%2Cstatus%2Cnotes%2Coutcomes%2Ccreated_at%2Cupdated_at&page%5Boffset%5D=0&page%5Blimit%5D=10&sort=id&filter%5Bsalesperson_id%5D=10&filter%5Bvisit_date%5D=1680000600' \ 
+  'https://customer-service-190711226672.us-central1.run.app/api/customer_visits/?include=customer&fields%5BCustomerVisit%5D=salesperson_id%2Ccustomer_id%2Cvisit_date%2Cstatus%2Cnotes%2Coutcomes%2Ccreated_at%2Cupdated_at&page%5Boffset%5D=0&page%5Blimit%5D=10&sort=id&filter%5Bsalesperson_id%5D=10&filter%5Bvisit_date%5D=1680000600' \ 
   -H 'accept: application/vnd.api+json' \
   -H 'Content-Type: application/json'
 ```
@@ -337,7 +337,7 @@ curl -X 'GET' \
 ## 1. Cambiar estado a 'completed'
 
 ```bash
-curl -X PATCH http://localhost:8080/api/visit/1/status \
+curl -X PATCH https://customer-service-190711226672.us-central1.run.app/api/visit/1/status \
      -H "Content-Type: application/json" \
      -d '{"status": "completed"}'
 ```
@@ -354,7 +354,7 @@ curl -X PATCH http://localhost:8080/api/visit/1/status \
 ## 2. Listar visitas de vendedor 10 a un cliente 1
 
 ```bash
-curl -X GET "http://localhost:8080/api/visits?salespersonId=10&customerId=1"
+curl -X GET "https://customer-service-190711226672.us-central1.run.app/api/visits?salespersonId=10&customerId=1"
 ```
 
 
@@ -376,7 +376,7 @@ curl -X GET "http://localhost:8080/api/visits?salespersonId=10&customerId=1"
 ## 3. Obtener ruta de visitas del 2023‑03‑28 para vendedor 10
 
 ```bash
-curl -X GET "http://localhost:8080/api/visits/route?salespersonId=10&date=2023-03-28"
+curl -X GET "https://customer-service-190711226672.us-central1.run.app/api/visits/route?salespersonId=10&date=2023-03-28"
 ```
 
 ### RESPUESTA
